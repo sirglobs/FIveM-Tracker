@@ -222,6 +222,112 @@ const CLOUD_META_KEY="fivemTrackerCloudMeta";
 const CLOUD_PRELINK_BACKUP_KEY="fivemTrackerPreCloudBackup";
 const LEGACY_BACKUP_KEY="fivemTrackerLegacyBackup";
 const DEFAULT_CATEGORIES=["Weapons","Drugs","Tools","Attachments","Vehicles","Food","Materials","Currency","Other"];
+const SCREENSHOT_INVENTORY_IMPORT_ID="inventory-screenshots-2026-09-17-v1";
+const SCREENSHOT_INVENTORY_IMPORT=[
+  {name:"Car Door",qty:11,category:"Vehicles"},
+  {name:"Car Wheel",qty:12,category:"Vehicles"},
+  {name:"Car Hood",qty:5,category:"Vehicles"},
+  {name:"Engine",qty:5,category:"Vehicles"},
+  {name:"Money",qty:57741,category:"Currency"},
+  {name:"Car Trunk",qty:4,category:"Vehicles"},
+  {name:"Painkillers",qty:10,category:"Other"},
+  {name:"Bandage",qty:10,category:"Other"},
+  {name:"Acetone",qty:1,category:"Drugs"},
+  {name:"Ephedrine",qty:1,category:"Drugs"},
+  {name:"Phone",qty:1,category:"Other"},
+  {name:"Counterfeit Cash",qty:59640,category:"Currency"},
+  {name:"Hydrochloric Acid",qty:5,category:"Drugs"},
+  {name:"Vin Remover",qty:3,category:"Tools"},
+  {name:"Suppressor",qty:1,category:"Attachments"},
+  {name:"9mm",qty:92,category:"Weapons"},
+  {name:"Service Pistol",qty:1,category:"Weapons"},
+  {name:"Thermite Powder",qty:5,category:"Materials"},
+  {name:"Large Bomb",qty:2,category:"Weapons"},
+  {name:"Mining Laser",qty:1,category:"Tools"},
+  {name:"Green USB",qty:2,category:"Other"},
+  {name:"VPN",qty:1,category:"Other"},
+  {name:"Binoculars",qty:1,category:"Other"},
+  {name:"Handcuffs",qty:1,category:"Other"},
+  {name:"Budz Bar",qty:10,category:"Food"},
+  {name:"Lighter",qty:6,category:"Tools"},
+  {name:"Radio",qty:3,category:"Other"},
+  {name:"Weed Package",qty:18,category:"Drugs"},
+  {name:"Coks Packages",qty:40,category:"Drugs"},
+  {name:"Shoe",qty:2,category:"Other"},
+  {name:"Bag Of Coke",qty:9,category:"Drugs"},
+  {name:"Meth",qty:208,category:"Drugs"},
+  {name:"Advanced Repairkit",qty:9,category:"Tools"},
+  {name:"Suspension Level 4",qty:1,category:"Vehicles"},
+  {name:"White Widow 2g",qty:9,category:"Drugs"},
+  {name:"Medium Armor",qty:3,category:"Other"}
+];
+
+const SCREENSHOT_INVENTORY_IMPORT_2_ID="inventory-screenshots-2026-09-17-v2";
+const SCREENSHOT_INVENTORY_IMPORT_2=[
+  {name:"Spray Can",qty:10,category:"Other"},
+  {name:"Rolling Paper",qty:2,category:"Other"},
+  {name:"Casino Membership",qty:1,category:"Other"},
+  {name:"Cigar",qty:6,category:"Other"},
+  {name:"Shovel",qty:1,category:"Tools"},
+  {name:"Fishing Rod",qty:1,category:"Tools"},
+  {name:"Hunting Rifle",qty:1,category:"Weapons"},
+  {name:"Gas Can",qty:5,category:"Other"},
+  {name:"Hunting Ammo",qty:279,category:"Weapons"},
+  {name:"Fish Bait",qty:45,category:"Other"},
+  {name:"Rope",qty:8,category:"Tools"},
+  {name:"Drill Bit",qty:1,category:"Tools"},
+  {name:"Takeout Box",qty:3,category:"Food"},
+  {name:"Cigarette",qty:2,category:"Other"},
+  {name:"Toolkit",qty:1,category:"Materials"},
+  {name:"Empty Bottle",qty:10,category:"Other"},
+  {name:"Cleaning Kit",qty:1,category:"Tools"},
+  {name:"Phone",qty:2,category:"Other"},
+  {name:"Diamond Box",qty:1,category:"Other"},
+  {name:"Angle Grinder",qty:2,category:"Tools"},
+  {name:"Bat",qty:5,category:"Weapons"},
+  {name:"Industrial Drill",qty:1,category:"Tools"},
+  {name:"Machete",qty:2,category:"Weapons"},
+  {name:"Knife",qty:3,category:"Weapons"},
+  {name:"Hunting Knife",qty:1,category:"Weapons"},
+  {name:"Switchblade",qty:1,category:"Weapons"},
+  {name:"Crowbar",qty:2,category:"Weapons"},
+  {name:"Nightstick",qty:1,category:"Weapons"},
+  {name:"Stone Hatchet",qty:1,category:"Weapons"},
+  {name:"Bottle",qty:1,category:"Other"},
+  {name:"Tazer",qty:2,category:"Weapons"},
+  {name:"Pistol MK2",qty:8,category:"Weapons"},
+  {name:"Service Pistol",qty:5,category:"Weapons"},
+  {name:"Pistol .50",qty:1,category:"Weapons"},
+  {name:"Machine Pistol",qty:1,category:"Weapons"},
+  {name:"Combat Pistol",qty:1,category:"Weapons"},
+  {name:"Pistol",qty:19,category:"Weapons"},
+  {name:"SNS Pistol",qty:1,category:"Weapons"},
+  {name:"Micro SMG",qty:2,category:"Weapons"},
+  {name:"Assault SMG",qty:1,category:"Weapons"},
+  {name:"Combat PDW",qty:1,category:"Weapons"},
+  {name:"SMG",qty:2,category:"Weapons"},
+  {name:"Assault Rifle",qty:3,category:"Weapons"},
+  {name:"Carbine Rifle",qty:2,category:"Weapons"},
+  {name:"Military Rifle",qty:1,category:"Weapons"},
+  {name:"Special Carbine MK2",qty:1,category:"Weapons"},
+  {name:"Tactical Rifle",qty:1,category:"Weapons"},
+  {name:"Gusenberg",qty:1,category:"Weapons"},
+  {name:"Sawn Off Shotgun",qty:1,category:"Weapons"},
+  {name:"Pump Shotgun MK2",qty:1,category:"Weapons"},
+  {name:"Less Lethal Shotgun",qty:1,category:"Weapons"},
+  {name:"Extended Shotgun Clip",qty:1,category:"Attachments"},
+  {name:"Extended Pistol Clip",qty:5,category:"Attachments"},
+  {name:"Suppressor",qty:1,category:"Attachments"},
+  {name:"5.56x45",qty:3240,category:"Weapons"},
+  {name:".50 AE",qty:239,category:"Weapons"},
+  {name:"7.62x39",qty:466,category:"Weapons"},
+  {name:".44 Magnum",qty:990,category:"Weapons"},
+  {name:".380 ACP",qty:180,category:"Weapons"},
+  {name:"12 Gauge",qty:2770,category:"Weapons"},
+  {name:".45 ACP",qty:1315,category:"Weapons"},
+  {name:"9mm",qty:161,category:"Weapons"},
+  {name:"CBD Pen",qty:26,category:"Drugs"}
+];
 const LEGACY_MATERIALS=["Aluminum","Scrap","Plastic","Steel","Iron","Rubber","Copper","Glass","Aluminum Oxide","Iron Oxide","Lockpick","Advanced Lockpick","Toolkit","Thermite Powder"];
 const DEFAULT_RECIPES=[
 {name:"Lockpick",level:0,output:1,materials:{Scrap:12,Plastic:12,Steel:12}},
@@ -297,14 +403,95 @@ function typeIcon(type){return ({purchase:"🛒",sale:"💵",craft:"⚒",transfe
 function toast(msg,type="success"){const wrap=document.getElementById("toastWrap");const el=document.createElement("div");el.className=`toast ${type}`;el.textContent=msg;wrap.appendChild(el);setTimeout(()=>{el.style.opacity="0";el.style.transform="translateY(6px)";setTimeout(()=>el.remove(),200)},3200)}
 function confirmIf(key,message){return !db.settings.confirm[key]||window.confirm(message)}
 
+
+const VEHICLE_STORAGE_IMPORT_ID="vehicle-storage-2026-09-17-v1";
+const VEHICLE_STORAGE_IMPORT=[
+  {name:"Journey",lpn:"50E30S1G",type:"van"},
+  {name:"Sultan Custom",lpn:"41L670A1",type:"car"},
+  {name:"Burrito",lpn:"6BP688ND",type:"van"},
+  {name:"Surfer Rusty",lpn:"5CK542VG",type:"van"},
+  {name:"Surfer Rusty",lpn:"2ZN532RG",type:"van"},
+  {name:"Surfer Rusty",lpn:"30W788RU",type:"van"},
+  {name:"Surfer Rusty",lpn:"4MO328RO",type:"van"},
+  {name:"Surfer Rusty",lpn:"9ZS256VO",type:"van"},
+  {name:"Tornado",lpn:"1VM311SR",type:"car"},
+  {name:"Dubsta Luxuary",lpn:"1XJ456FM",type:"car"},
+  {name:"Coquette D5 Drag",lpn:"4CN770UN",type:"car"},
+  {name:"Trager",lpn:"2YM544FB",type:"car"}
+];
+
 function emptyDB(){return {version:1,createdAt:iso(),updatedAt:iso(),settings:{currencySymbol:"$",commandShortcut:"Ctrl+K",inventoryPresets:[1,5,10,25,50],materialPresets:[10,25,100,250,500],defaultCategory:"Other",dateFormat:"MM/DD/YYYY",defaultLowStock:10,backupReminderDays:14,lastBackupAt:null,largeAdjustmentThreshold:1000,confirm:{archive:true,delete:true,sale:true,craft:false,largeAdjustment:true,import:true,reset:true}},ui:{accent:"#3b82f6",cardMinWidth:260,compactCards:false,materialOrder:[],inventoryOrder:[],recipeOrder:[],locationOrder:[],dashboardOrder:["alerts","goals","activity","storage"],dashboardHidden:[],needsOrder:["need","wishlist","low","gaps"],needsHidden:[],tabLabels:{},tabIcons:{},hiddenTabs:[],pageTitles:{},pageDescriptions:{}},categories:[...DEFAULT_CATEGORIES],tags:[],items:[],locations:[{id:"loc-unassigned",name:"Unassigned",type:"unassigned",notes:"Imported or not yet assigned",capacityMode:"none",slotCapacity:0,weightCapacity:0,locked:false,archived:false,system:true},{id:"loc-warehouse",name:"Warehouse",type:"warehouse",notes:"",capacityMode:"none",slotCapacity:0,weightCapacity:0,locked:false,archived:false},{id:"loc-stash",name:"Stash House",type:"stash",notes:"",capacityMode:"none",slotCapacity:0,weightCapacity:0,locked:false,archived:false},{id:"loc-person",name:"On Person",type:"person",notes:"",capacityMode:"none",slotCapacity:0,weightCapacity:0,locked:false,archived:false}],stock:{"loc-unassigned":{},"loc-warehouse":{},"loc-stash":{},"loc-person":{}},cost:{},recipes:[],purchases:[],sales:[],transactions:[],craftHistory:[],activity:[],listEntries:[],goals:[],savedViews:[],purchaseTemplates:[],recentlyUsedItemIds:[]}}
 function hydrateDB(d){const base=emptyDB();const out={...base,...d};out.settings={...base.settings,...(d.settings||{}),confirm:{...base.settings.confirm,...(d.settings?.confirm||{})}};out.ui={...base.ui,...(d.ui||{}),tabLabels:{...base.ui.tabLabels,...(d.ui?.tabLabels||{})},tabIcons:{...base.ui.tabIcons,...(d.ui?.tabIcons||{})},pageTitles:{...base.ui.pageTitles,...(d.ui?.pageTitles||{})},pageDescriptions:{...base.ui.pageDescriptions,...(d.ui?.pageDescriptions||{})}};for(const k of ["materialOrder","inventoryOrder","recipeOrder","locationOrder","dashboardOrder","dashboardHidden","needsOrder","needsHidden","hiddenTabs"])if(!Array.isArray(out.ui[k]))out.ui[k]=clone(base.ui[k]);for(const k of ["categories","tags","items","locations","recipes","purchases","sales","transactions","craftHistory","activity","listEntries","goals","savedViews","purchaseTemplates","recentlyUsedItemIds"])if(!Array.isArray(out[k]))out[k]=clone(base[k]);if(!out.stock||typeof out.stock!=="object")out.stock={};if(!out.cost||typeof out.cost!=="object")out.cost={};base.locations.forEach(l=>{if(!out.locations.some(x=>x.id===l.id))out.locations.push(l)});out.locations.forEach(l=>{if(!out.stock[l.id])out.stock[l.id]={}});out.items.forEach(it=>{it.aliases=Array.isArray(it.aliases)?it.aliases:[];it.tags=Array.isArray(it.tags)?it.tags:[];it.lowStock=n(it.lowStock,out.settings.defaultLowStock);it.estimatedValue=n(it.estimatedValue);it.unitWeight=n(it.unitWeight);it.favorite=!!it.favorite;it.pinned=!!it.pinned;it.archived=!!it.archived;if(!out.cost[it.id])out.cost[it.id]={qty:totalQtyFrom(out,it.id),total:0}});return out}
 function totalQtyFrom(d,itemId){return Object.values(d.stock||{}).reduce((sum,b)=>sum+n(b?.[itemId]),0)}
 function ensureItemIn(target,name,opts={}){let it=target.items.find(x=>norm(x.name)===norm(name));if(it){if(opts.isMaterial)it.isMaterial=true;return it}it={id:uid("item"),name:String(name).trim(),category:opts.category||(opts.isMaterial?"Materials":"Other"),isMaterial:!!opts.isMaterial,aliases:[],tags:[],notes:"",lowStock:n(opts.lowStock,target.settings.defaultLowStock),estimatedValue:0,unitWeight:0,favorite:false,pinned:false,archived:false,createdAt:iso(),updatedAt:iso()};target.items.push(it);target.cost[it.id]={qty:0,total:0};return it}
 function seedDefaultCatalog(target,replaceRecipes=false){LEGACY_MATERIALS.forEach(name=>ensureItemIn(target,name,{isMaterial:true,category:"Materials"}));const favoritesLegacy=safeJSON(localStorage.getItem("fivemRecipeFavorites"),[]);if(replaceRecipes)target.recipes=[];DEFAULT_RECIPES.forEach((r,idx)=>{let existing=target.recipes.find(x=>norm(x.name)===norm(r.name));if(existing&&!replaceRecipes){if(existing.builtIn){if(existing.craftTime==null&&r.craftTime!=null)existing.craftTime=r.craftTime;if(!existing.xp&&r.xp)existing.xp=r.xp}return}const out=ensureItemIn(target,r.name,{isMaterial:LEGACY_MATERIALS.some(m=>norm(m)===norm(r.name)),category:LEGACY_MATERIALS.some(m=>norm(m)===norm(r.name))?"Materials":"Attachments"});const ingredients=Object.entries(r.materials).map(([name,qty])=>({itemId:ensureItemIn(target,name,{isMaterial:true,category:"Materials"}).id,qty}));target.recipes.push({id:uid("recipe"),name:r.name,outputItemId:out.id,level:r.level,output:r.output||1,ingredients,craftTime:r.craftTime??null,xp:r.xp||"",notes:"",favorite:favoritesLegacy.includes(idx),enabled:true,builtIn:true,createdAt:iso(),updatedAt:iso()})})}
 function safeJSON(v,fallback){try{return v?JSON.parse(v):fallback}catch{return fallback}}
+function applyScreenshotInventoryImport(target){
+  target.importMarkers=Array.isArray(target.importMarkers)?target.importMarkers:[];
+  if(target.importMarkers.includes(SCREENSHOT_INVENTORY_IMPORT_ID))return false;
+  const loc="loc-unassigned";
+  if(!target.stock[loc])target.stock[loc]={};
+  let added=0;
+  for(const row of SCREENSHOT_INVENTORY_IMPORT){
+    let it=target.items.find(x=>norm(x.name)===norm(row.name));
+    if(!it){it=ensureItemIn(target,row.name,{isMaterial:false,category:row.category||"Other"})}
+    if(!it.isMaterial&&row.category&&!it.category)it.category=row.category;
+    target.stock[loc][it.id]=Math.max(0,n(target.stock[loc][it.id]))+n(row.qty);
+    if(!target.cost[it.id])target.cost[it.id]={qty:0,total:0};
+    target.cost[it.id].qty=Math.max(0,n(target.cost[it.id].qty))+n(row.qty);
+    added++;
+  }
+  target.importMarkers.push(SCREENSHOT_INVENTORY_IMPORT_ID);
+  target.updatedAt=iso();
+  target.activity=Array.isArray(target.activity)?target.activity:[];
+  target.activity.unshift({id:uid("act"),type:"system",title:"Screenshot inventory imported",detail:`Added ${added} inventory entries from the supplied screenshots to Unassigned inventory. Duplicate screenshot stacks were combined before import.`,at:iso()});
+  return true;
+}
+
+function applyScreenshotInventoryImport2(target){
+  target.importMarkers=Array.isArray(target.importMarkers)?target.importMarkers:[];
+  if(target.importMarkers.includes(SCREENSHOT_INVENTORY_IMPORT_2_ID))return false;
+  const loc="loc-unassigned";
+  if(!target.stock[loc])target.stock[loc]={};
+  let added=0;
+  for(const row of SCREENSHOT_INVENTORY_IMPORT_2){
+    let it=target.items.find(x=>norm(x.name)===norm(row.name));
+    if(!it){it=ensureItemIn(target,row.name,{isMaterial:false,category:row.category||"Other"})}
+    if(!it.isMaterial&&row.category&&!it.category)it.category=row.category;
+    target.stock[loc][it.id]=Math.max(0,n(target.stock[loc][it.id]))+n(row.qty);
+    if(!target.cost[it.id])target.cost[it.id]={qty:0,total:0};
+    target.cost[it.id].qty=Math.max(0,n(target.cost[it.id].qty))+n(row.qty);
+    added++;
+  }
+  target.importMarkers.push(SCREENSHOT_INVENTORY_IMPORT_2_ID);
+  target.updatedAt=iso();
+  target.activity=Array.isArray(target.activity)?target.activity:[];
+  target.activity.unshift({id:uid("act"),type:"system",title:"Additional screenshot inventory imported",detail:`Added ${added} inventory entries from the additional supplied screenshots to Unassigned inventory. Overlapping screenshots were de-duplicated before import.`,at:iso()});
+  return true;
+}
+
+function applyVehicleStorageImport(target){
+  target.importMarkers=Array.isArray(target.importMarkers)?target.importMarkers:[];
+  if(target.importMarkers.includes(VEHICLE_STORAGE_IMPORT_ID))return false;
+  let added=0;
+  for(const row of VEHICLE_STORAGE_IMPORT){
+    const plate=`LPN: ${row.lpn}`;
+    const existing=target.locations.find(l=>!l.archived&&norm(l.name)===norm(row.name)&&String(l.notes||"").toUpperCase().includes(String(row.lpn).toUpperCase()));
+    if(existing)continue;
+    const id=uid("loc");
+    target.locations.push({id,name:row.name,type:row.type,notes:plate,capacityMode:"none",slotCapacity:0,weightCapacity:0,locked:false,archived:false,system:false});
+    target.stock[id]={};
+    added++;
+  }
+  target.importMarkers.push(VEHICLE_STORAGE_IMPORT_ID);
+  target.updatedAt=iso();
+  target.activity=Array.isArray(target.activity)?target.activity:[];
+  target.activity.unshift({id:uid("act"),type:"system",title:"Vehicle storage imported",detail:`Added ${added} vehicle storage locations with LPNs from the supplied vehicle list.`,at:iso()});
+  return true;
+}
+
 function migrateLegacy(target){const legacy={fivemMaterials:localStorage.getItem("fivemMaterials"),fivemRecipeFavorites:localStorage.getItem("fivemRecipeFavorites"),fivemCraftHistory:localStorage.getItem("fivemCraftHistory"),fivemPurchaseHistory:localStorage.getItem("fivemPurchaseHistory"),fivemPurchaseItems:localStorage.getItem("fivemPurchaseItems")};if(Object.values(legacy).some(Boolean)&&!localStorage.getItem(LEGACY_BACKUP_KEY))localStorage.setItem(LEGACY_BACKUP_KEY,JSON.stringify({savedAt:iso(),legacy}));const mats=safeJSON(legacy.fivemMaterials,{});Object.entries(mats).forEach(([name,qty])=>{const it=ensureItemIn(target,name,{isMaterial:true,category:"Materials"});target.stock["loc-unassigned"][it.id]=Math.max(0,n(qty));target.cost[it.id]={qty:Math.max(0,n(qty)),total:0}});const savedNames=safeJSON(legacy.fivemPurchaseItems,[]);savedNames.forEach(name=>{if(String(name||" ").trim())ensureItemIn(target,String(name).trim(),{category:"Other"})});const oldPurch=safeJSON(legacy.fivemPurchaseHistory,[]);oldPurch.forEach(p=>{const it=ensureItemIn(target,p.item||"Unknown Item",{category:p.category||"Other"});target.purchases.push({id:String(p.id||uid("purchase")),itemId:it.id,quantity:n(p.quantity,1),totalPrice:n(p.totalPrice),eachPrice:n(p.eachPrice,n(p.totalPrice)/Math.max(1,n(p.quantity,1))),seller:p.seller||"",payment:p.payment||"",locationId:null,date:p.date||todayLocal(),time:p.time||"",tags:Array.isArray(p.tags)?p.tags:[],notes:p.notes||"",createdAt:p.createdAt||`${p.date||todayLocal()}T${p.time||"12:00"}:00`,updatedAt:p.updatedAt||null,legacyNoInventory:true});});const oldCraft=safeJSON(legacy.fivemCraftHistory,[]);oldCraft.forEach(c=>{target.craftHistory.push({id:uid("craft"),recipeId:null,recipeName:c.recipeName||"Legacy craft",amount:n(c.amount,1),outputQty:n(c.amount,1),locationId:"loc-unassigned",ingredientsSnapshot:[],at:c.time||iso(),legacy:true});});if(Object.keys(mats).length||oldPurch.length||oldCraft.length)target.activity.unshift({id:uid("act"),type:"system",title:"Legacy tracker data imported",detail:`Imported ${Object.keys(mats).length} material balances, ${oldPurch.length} purchases and ${oldCraft.length} craft records. Existing balances were not double-counted.`,at:iso()})}
-function loadDB(){let saved=safeJSON(localStorage.getItem(DB_KEY),null);if(saved){db=hydrateDB(saved);seedDefaultCatalog(db,false)}else{db=emptyDB();seedDefaultCatalog(db,false);migrateLegacy(db);saveDB(false)}reconcileCost(false)}
+function loadDB(){let saved=safeJSON(localStorage.getItem(DB_KEY),null);if(saved){db=hydrateDB(saved);seedDefaultCatalog(db,false)}else{db=emptyDB();seedDefaultCatalog(db,false);migrateLegacy(db)}const imported=applyScreenshotInventoryImport(db);const imported2=applyScreenshotInventoryImport2(db);const importedVehicles=applyVehicleStorageImport(db);reconcileCost(false);if(imported||imported2||importedVehicles||!saved)saveDB(false)}
 function saveDB(mark=true){if(mark)db.updatedAt=iso();localStorage.setItem(DB_KEY,JSON.stringify(db));const s=document.getElementById("saveState");if(s){s.textContent="● Autosaved";s.style.color="#86efac"}if(mark)queueCloudPush()}
 function commit(label,fn,{render=true}={}){const before=clone(db);try{const result=fn();undoStack.push({label,before});if(undoStack.length>20)undoStack.shift();saveDB();if(render)renderAll();return result}catch(err){db=before;console.error(err);toast(err.message||"That action could not be completed.","error");return null}}
 function undoLast(){const u=undoStack.pop();if(!u)return toast("Nothing to undo in this session.","warning");db=hydrateDB(u.before);saveDB();renderAll();toast(`Undid: ${u.label}`)}
@@ -566,7 +753,7 @@ async function cloudSignOut(){try{if(cloudSession?.access_token)await cloudReque
 async function fetchCloudRow(){const uid=cloudUserId();if(!uid)return null;const rows=await cloudRequest(`/rest/v1/tracker_state?user_id=eq.${encodeURIComponent(uid)}&select=user_id,data,updated_at`,{headers:{Accept:'application/json'}});return Array.isArray(rows)&&rows.length?rows[0]:null}
 async function pushCloud(force=false){if(cloudSuppressPush||cloudSyncBusy||!navigator.onLine)return false;await ensureCloudSession();if(!cloudSession)return false;cloudSyncBusy=true;setCloudStatus('Syncing…','busy');try{const uid=cloudUserId();if(!uid)throw new Error('No signed-in user.');const body={user_id:uid,data:db,updated_at:db.updatedAt||iso()};await cloudRequest('/rest/v1/tracker_state?on_conflict=user_id',{method:'POST',body,headers:{Prefer:'resolution=merge-duplicates,return=minimal'}});const at=iso();setCloudMeta({userId:uid,lastSyncedAt:at,lastRemoteUpdatedAt:body.updated_at});setCloudStatus('Synced','ok');const last=document.getElementById('cloudLastSync');if(last)last.textContent=formatCloudTime(at);return true}catch(e){console.error(e);setCloudStatus('Sync Error','error');if(force)toast(`Cloud sync failed: ${e.message}`,'error');return false}finally{cloudSyncBusy=false}}
 function queueCloudPush(){if(cloudSuppressPush||!cloudSession?.access_token)return;clearTimeout(cloudPushTimer);setCloudStatus(navigator.onLine?'Pending…':'Offline',navigator.onLine?'busy':'idle');cloudPushTimer=setTimeout(()=>pushCloud(false),900)}
-async function applyCloudDB(remoteData){if(!remoteData||typeof remoteData!=='object')throw new Error('Cloud data is invalid.');localStorage.setItem(CLOUD_PRELINK_BACKUP_KEY,JSON.stringify({savedAt:iso(),data:db}));cloudSuppressPush=true;try{db=hydrateDB(remoteData);seedDefaultCatalog(db,false);reconcileCost(false);saveDB(false);renderAll();setTimeout(applyCustomization,0)}finally{cloudSuppressPush=false}}
+async function applyCloudDB(remoteData){if(!remoteData||typeof remoteData!=='object')throw new Error('Cloud data is invalid.');localStorage.setItem(CLOUD_PRELINK_BACKUP_KEY,JSON.stringify({savedAt:iso(),data:db}));let imported=false;cloudSuppressPush=true;try{db=hydrateDB(remoteData);seedDefaultCatalog(db,false);imported=applyScreenshotInventoryImport(db);const imported2=applyScreenshotInventoryImport2(db);const importedVehicles=applyVehicleStorageImport(db);imported=imported||imported2||importedVehicles;reconcileCost(false);saveDB(false);renderAll();setTimeout(applyCustomization,0)}finally{cloudSuppressPush=false}if(imported)setTimeout(()=>queueCloudPush(),75)}
 async function pullCloud({force=false}={}){if(cloudSyncBusy||!navigator.onLine)return false;await ensureCloudSession();if(!cloudSession)return false;cloudSyncBusy=true;setCloudStatus('Downloading…','busy');try{const row=await fetchCloudRow();if(!row){if(force)toast('No cloud copy exists yet. Uploading this device instead.','info');cloudSyncBusy=false;return pushCloud(force)}await applyCloudDB(row.data);const at=iso();setCloudMeta({userId:cloudUserId(),lastSyncedAt:at,lastRemoteUpdatedAt:row.updated_at});setCloudStatus('Synced','ok');const last=document.getElementById('cloudLastSync');if(last)last.textContent=formatCloudTime(at);if(force)toast('Downloaded the cloud copy.','success');return true}catch(e){console.error(e);setCloudStatus('Sync Error','error');if(force)toast(`Download failed: ${e.message}`,'error');return false}finally{cloudSyncBusy=false}}
 async function initialCloudLink(){await ensureCloudSession();if(!cloudSession||!navigator.onLine)return;const uid=cloudUserId(),meta=cloudMeta(),row=await fetchCloudRow();if(!row){await pushCloud(true);return}if(meta.userId!==uid){await applyCloudDB(row.data);setCloudMeta({userId:uid,lastSyncedAt:iso(),lastRemoteUpdatedAt:row.updated_at});toast('Loaded your existing cloud tracker on this device.','success');return}const lastSync=meta.lastSyncedAt?new Date(meta.lastSyncedAt).getTime():0,localTime=db.updatedAt?new Date(db.updatedAt).getTime():0,remoteTime=row.updated_at?new Date(row.updated_at).getTime():0;const localChanged=localTime>lastSync+1000,remoteChanged=remoteTime>lastSync+1000;if(localChanged&&remoteChanged){if(remoteTime>=localTime){await applyCloudDB(row.data);toast('Both devices changed since the last sync. The newer cloud copy was kept; your previous local copy was backed up.','warning')}else{await pushCloud(true);toast('Both devices changed since the last sync. This newer device copy was kept.','warning')}}else if(remoteChanged){await applyCloudDB(row.data)}else if(localChanged){await pushCloud(false)}else if(remoteTime>localTime){await applyCloudDB(row.data)}setCloudMeta({userId:uid,lastSyncedAt:iso(),lastRemoteUpdatedAt:row.updated_at});setCloudStatus('Synced','ok')}
 async function cloudSyncNow(){try{await ensureCloudSession();if(!cloudSession)return openCloudModal();const row=await fetchCloudRow();if(!row)return pushCloud(true);const remoteTime=new Date(row.updated_at||0).getTime(),localTime=new Date(db.updatedAt||0).getTime();if(remoteTime>localTime)return pullCloud({force:true});return pushCloud(true)}catch(e){toast(e.message,'error')}}
