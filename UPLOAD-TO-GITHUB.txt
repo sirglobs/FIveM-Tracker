@@ -1,0 +1,18 @@
+FiveM Tracker PWA + Cloud Sync
+
+Upload the CONTENTS of this folder to the ROOT of your GitHub repository:
+- index.html
+- manifest.webmanifest
+- service-worker.js
+- icons/
+
+Replace the existing root files when GitHub asks.
+Do not upload this parent folder as a nested folder.
+
+After committing, Cloudflare should redeploy automatically.
+Open your existing tracker URL and hard-refresh once.
+Then click the new Cloud Sync button in the top bar.
+
+Use Create Account on the first device, then sign in with the same account on the other device.
+The first device uploads its current local tracker if no cloud copy exists.
+A new device downloads the existing cloud copy automatically.
