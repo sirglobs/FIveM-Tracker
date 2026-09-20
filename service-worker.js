@@ -1,4 +1,4 @@
-const CACHE_NAME = "fivem-tracker-pwa-v4-crafting-fix2";
+const CACHE_NAME = "fivem-tracker-pwa-v4-cash-wallet";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -31,7 +31,7 @@ self.addEventListener("fetch", event => {
   // Keep the main app fresh when online, but fall back to the cached app offline.
   if (event.request.mode === "navigate") {
     event.respondWith(
-      fetch(event.request, { cache: "no-store" })
+      fetch(event.request)
         .then(response => {
           const copy = response.clone();
           caches.open(CACHE_NAME).then(cache => cache.put("./index.html", copy));
