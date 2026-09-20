@@ -1,4 +1,4 @@
-const CACHE_NAME = "fivem-tracker-pwa-v4-cash-wallet";
+const CACHE_NAME = "fivem-tracker-pwa-v5-expense-income";
 const APP_SHELL = [
   "./",
   "./index.html",
